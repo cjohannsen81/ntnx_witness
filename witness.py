@@ -5,7 +5,7 @@
 # Note: Certificate verfication is set False
 ###
 
-import snmp
+import listen
 import config
 import json 
 import requests
@@ -32,6 +32,9 @@ def promote(site):
     print r.content
 
 if __name__ == '__main__':
-    site = snmp.some_func()
-    promote(site)
-    
+    site = listen.receiver()
+    try:
+        promote(site)
+    except:
+        print "Exception"
+        raise
