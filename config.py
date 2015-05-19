@@ -1,10 +1,10 @@
 cred = dict(
-    username = "christian.johannsen@nutanixdc.local",
-    password = "Guitar,1"
+    username = "username",
+    password = "password"
     )
     
 metro = dict(
-    siteA = "10.68.30.40",
-    siteB = "10.68.30.44",
+    siteA = "ip/dns",
+    siteB = "ip/dns",
     pdName = "MetroTest01"
 )
